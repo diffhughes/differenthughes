@@ -1,0 +1,354 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; /*Padding included in total width */
+}
+/*2 cell grid for stacking header over header image*/
+header {
+display: grid;
+grid-template-rows: auto auto;
+grid-template-areas: 'header''nav'; /* grid template 'header' stacks image and h1 text- Different Hughes */
+}
+
+ .headerimg {
+grid-area: header;
+width: 100%;
+z-index: 1; /*puts image behind header*/
+min-height: 150px;
+object-fit: cover;
+object-position: left center;
+}
+
+h1 {
+font-family: 'Lato', sans-serif;
+font-size: clamp(32px, 4.8vw, 76px); /*font size for header changes with window */
+font-weight: 300;
+letter-spacing: 0.1em; /*tracking 100*/
+color: #bfbfbf;
+padding: 15px 10px;
+grid-area: header;
+z-index: 2;
+align-self: end;
+}
+
+/*font size and colors for 'Hughes' and colors*/
+span {
+font-size: clamp(36px, 5.5vw, 88px);
+letter-spacing: 0.4em; /*tracking 400*/
+}
+
+#red {
+color: #d16969;
+}
+
+#orange {
+color: #e2b069;
+}
+
+#yellow {
+color: #e0dd75;
+}
+
+#green {
+color: #4eb76c;
+}
+
+#blue {
+color: #55c6c6;
+}
+
+#purple {
+color: #8979b2;
+}
+
+/*navigation with ul flexbox*/
+nav {
+background: linear-gradient(to bottom, #172131, #2d394c, #172131);
+width: 100%;
+grid-area: nav;
+}
+
+ul {
+display: flex;
+width: 100%;
+list-style-type: none;
+}
+
+li {
+font-family: 'Lato', sans-serif;
+font-size: 32px;
+font-weight: 300;
+}
+
+li.rightlink {/*sets about and contact nav buttons to the right*/
+margin-left: auto;
+}
+
+
+/*navigation bar style*/
+a.navlink {
+display: block;
+border: solid black;
+border-width: 0px 1px 0px 0px;
+padding: 15px 10px;
+}
+
+#aboutnav {
+border: solid black;
+border-width: 0px 1px;
+}
+
+a.navlink:hover {/*color shift on navlinks*/
+background-color: #172131;
+}
+
+/*general link style*/
+a:link {
+color: #bfbfbf;
+text-decoration: none;
+}
+
+a:visited {
+color: #bfbfbf;
+text-decoration: none;
+}
+
+/*grid structure and styling for main sections*/
+section {
+background-color: #686f78;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto auto;
+grid-template-areas: 'sectionhead sectionhead sectionhead' '. . .';
+}
+
+.sectionhead {
+background-color: #2d394c;
+grid-area: sectionhead;
+}
+
+.contentbox {
+padding: 10%;
+align-self: center;
+justify-self: center;
+}
+
+/*grid and styling for about me section*/
+.aboutme {
+display: flex;
+flex-direction: column;
+background-color: white;
+}
+
+.aboutheader {
+color: #bfbfbf;
+}
+
+.aboutcontent {
+display: grid;
+padding: 5%;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+gap: 5%;
+}
+
+#aboutimg {
+width: 80%;
+grid-row: 1 / 3;
+}
+
+p {
+font-size: clamp(1rem, 2.5vw, 1.75rem);
+font-family: "Crimson Pro", serif;
+font-weight: 300;
+font-style: normal;
+}
+
+#p1 {
+align-self: end;
+}
+
+#p2 {
+align-self: start;
+}
+
+/*flexbox contact section*/
+.contactheader {
+color: #bfbfbf;
+font-size: clamp(3rem, 5vw, 3.75rem);
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+margin: 2%;
+}
+
+.contactme {
+background-color: #2d394c;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form {
+width: 30%;
+}
+
+input {
+width: 100%;
+padding: 10px;
+margin: 0 0 5% 0;
+border: 2px solid #172131;
+border-radius: 5px;
+}
+
+textarea {
+width: 100%;
+height: 10vw;
+padding: 10px;
+resize: none;
+margin: 0 0 2% 0;
+border: 2px solid #172131;	
+border-radius: 5px;
+min-height: 10lh;
+}
+
+input[type=submit] {
+background-color: #5f748e;
+border: 1px solid #5f748e;
+border-radius: 10px;
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+font-size: clamp(1.25rem, 2.5vw, 3rem);
+}
+
+input[type=submit]:hover {
+background-color: #495f77;
+cursor: pointer;
+}
+
+
+h2 {
+font-family: 'Lato', sans-serif;
+font-size: clamp(1.875rem, 3vw, 3rem);
+font-weight: 300;
+letter-spacing: 0.1em;
+padding: 5px 15px;
+}
+
+/*footer grid and styling*/
+#footer {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto;
+grid-template-areas: 'text logos .''. toplink .''footertext footertext footertext';
+}
+
+#icons {/*flexbox to arrange icons*/
+display: flex;
+grid-area: logos;
+justify-content: space-evenly;
+background-color: white;
+}
+
+.logo {
+align-self: center;
+}
+
+.logoicon {
+width: 30px;
+height: 30px;
+}
+
+.footertext {
+grid-area: footertext;
+justify-self: center;
+padding: 5px;
+}
+
+/*back to top link styling*/
+#toplink {
+grid-area: toplink;
+padding: 5px;
+justify-self: center;
+}
+
+a#toplink:link {
+color: #000000;
+text-decoration: underline;
+}
+
+a#toplink:visited {
+color: #000000;
+text-decoration: underline;
+}
+
+/*Privacy policy link styling*/
+a#privacy:link {
+color: black;
+}
+
+a#privacy:visited {
+color: black;
+}
+
+/*responsive for shrinking*/
+
+@media (max-width: 1640px){
+	 form {
+    width: 80%; /* Or 90% if you want it even wider on mobile */
+    max-width: 500px; /* Optional: prevents it from looking 'stretched' on tablets */
+  }
+}
+
+@media (max-width: 1094px) {
+  section {
+    display: flex;
+	flex-direction: column;
+  }
+  
+  .contentbox {
+    padding: 20px;
+    width: 100%;
+	text-align: center; /*aligns images center*/
+  }
+
+.aboutcontent { /*makes a vertical stack for about me section on smaller screens*/
+display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding-bottom: 30px;
+}
+  
+  #aboutimg {
+    width: 100%; /* Let the photo take full width when stacked */
+    justify-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+ 
+ ul {
+flex-direction: column;
+}
+
+li.rightlink {
+margin-left: 0;
+}
+
+a.navlink {
+ display: block;
+ border: solid black;
+ border-width: 0px 0px 1px 0px;
+ padding: 15px 10px;
+}
+
+ #aboutnav {
+ border: solid black;
+ border-width: 0px 0px 1px 0px;
+}
+
+ li {
+ background: linear-gradient(to bottom, #172131, #2d394c, #2d394c, #172131);
+ font-size: 20px;
+}
+}
