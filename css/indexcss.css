@@ -133,6 +133,14 @@ align-self: center;
 justify-self: center;
 }
 
+img {
+  /* for orbit ad vibrancy (purples and blues showing up dull*/
+  color-rendering: optimizeQuality;
+  /* prevent washout*/
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
 /*grid and styling for about me section*/
 .aboutme {
 display: flex;
