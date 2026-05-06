@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/category-pages.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Della+Respira&display=swap" rel="stylesheet">
+	<title>
+	Different Hughes
+	</title>
+  </head>
+  <body>
+		<!--the header includes the Portfolio name, the decorative image, and the site navigation bar -->
+    <header id="top">
+	  <img src="images/header-image.png" alt="the header vector image with dark blue and a rainbow of colors" class="headerimg">
+      <h1><a href="index.html">DIFFERENT<br/><!-- Span with different ids to add different colors --><span id="red">H</span><span id="orange">U</span><span id="yellow">G</span><span id="green">H</span><span id="blue">E</span><span id="purple">S</span></a></h1>
+      <nav>
+        <ul>
+		  <li><a class="navlink" href="design.html">DESIGN</a></li>
+		  <li><span class="navlink">ART</span></li>
+		  <li><a class="navlink" href="animation.html">ANIMATION</a></li>
+		  <li><a class="navlink" href="ux.html">UX</a></li>
+		  <li class="rightlink"><a id="aboutnav" class="navlink" href="index.html#aboutme">ABOUT</a></li>
+		  <li><a class="navlink" href="#contactme">CONTACT</a></li>
+		</ul>  
+	  </nav>
+	</header>
+	<main>
+	<h2 class="validator">Validate</h2> <!-- Validates the html by taking out the header gap. Judge me all you want, it works. -->
+	  <section>
+	    <div class="contentbox">
+	      <img src="images/thumbnails/surrealist-collage.jpg" alt="A woman with a the head of a crane walking near a lake, holding the severed head of a deer.">
+		  <div class="title">
+		    <h3>Tribute of the Lake</h3>
+		    <p>A surrealist collage paying homage to the Rusty Lake series.</p>
+		  </div>
+	    </div>
+		<div class="contentbox">
+	      <img src="images/thumbnails/expressions.png" alt="Multiple drawings of a cartoon woman, from the shoulders up, all in 3/4 view, with a different expression on each one.">
+		  <div class="title">
+		    <h3>Acting/Expressions Practice</h3>
+		    <p>A practice in expression and character acting.</p>
+		  </div>
+	    </div>
+	    <div class="contentbox">
+	      <img src="images/thumbnails/negative-space.jpg" alt="Black and white high-contrast graphic of a bicycle frame and wheel using negative space.">
+		  <div class="title">
+		    <h3>Negative Space Study</h3>
+		    <p>A focus on composition through positive and negative space.</p>
+		  </div>
+		</div>  
+	    <div class="contentbox">
+	      <img src="images/thumbnails/value-study.jpg" alt="A vertical ink drawing featuring two distinct columns: a silhouette-heavy composition of cats on the left and an intricate, fine-line mandala pattern on the right.">
+		  <div class="title">
+		    <h3>Value Study</h3>
+		    <p>A study of value through shape and line.</p>
+		  </div>
+	    </div>
+		<div class="contentbox">
+	      <img src="images/thumbnails/color-response.jpg" alt="A symmetrical abstract gouache painting in an organic, mirrored composition. Features radiating leaf-like and flame-like shapes in blues and greens, all connected by a small central affinity-loop symbol.">
+		  <div class="title">
+		    <h3>Color Response</h3>
+		    <p>An exploration of emotion and color.</p>
+		  </div>
+	    </div>
+		<div class="contentbox">
+	      <img src="images/thumbnails/sandhill-grid.jpg" alt="A detailed pen and ink illustration of a Sandhill Crane standing in profile. The composition is structured as a grid, with each square containing different hand-drawn patterns, icons like the state of Florida, and typography including 'Sandhill,' 'Sunshine State,' and 'Florida.'">
+		  <div class="title">
+		    <h3>Sandhill Mosaic</h3>
+		    <p>Florida iconography in a detailed Sandhill Crane grid study.</p>
+		  </div>
+	    </div>
+		<div class="contentbox">
+	      <img src="images/thumbnails/bird-commission.jpg" alt="A digital painting of three parakeets—one blue and white, one yellow, and one white—perched together on a brown branch against a soft watercolor background with a feathery border.">
+		  <div class="title">
+		    <h3>Budgie Buddies</h3>
+		    <p>A commissioned piece for dearly departed pets.</p>
+		  </div>
+	    </div>
+		<div class="contentbox">
+	      <img src="images/thumbnails/sugar-skull.jpg" alt="A colored pencil drawing of a stylized sugar skull against a blue brick-patterned background. The skull features moon phase symbols on the forehead, pink floral crowns and cheek drapes, and a central feminine symbol.">
+		  <div class="title">
+		    <h3>Petals and Pillars</h3>
+		    <p>A tribute to women who have died at the hands of male violence.</p>
+		  </div>
+	    </div>
+	  </section>
+			<!-- This section contains a contact form -->
+			<section id="contactme" class="contactme">
+			<h2 class="contactheader" id="hideheader">CONTACT ME</h2>
+			<div id="thankyou">
+			<h3 id="tytext">THANK YOU!</h3>
+			</div>
+			<form id="contact" action="https://formspree.io/f/xbdwyody" method="post">
+			<label class="sr-only">
+			Name
+			</label>
+			<input type="text" placeholder="Name" name="Name" required><br>
+			<label class="sr-only">
+			Email
+			</label>
+			<input type="email" placeholder="Email" name="Email" required><br>
+			<label class="sr-only">
+			Project Description
+			</label>
+			<textarea placeholder="Tell me your project!" name="projectDescription" required></textarea><br>
+			<input type="button" value="SEND" id="button">
+			</form>
+			</section>
+			<footer id="footer">
+			<h2>DH<br/>Design</h2>
+			<div id="icons">
+			<a href="https://www.linkedin.com/in/shyann-ceh70880" class="logo"><img src="images/linkedin.svg" alt="LinkedIn logo" class="logoicon"></a>
+			<a href="https://x.com/difhughesdesign" class="logo"><img src="images/twitter.svg" alt="X logo" class="logoicon"></a>
+			<a href="https://www.instagram.com/different_hughes/" class="logo"><img src="images/insta.svg" alt="Instagram logo" class="logoicon"></a>
+			</div>
+			<a href="#top" id="toplink"><p>Back to top</p></a>
+			<p class="footertext">&copy; 2026 Different Hughes. All rights reserved. &nbsp; &nbsp; &nbsp; &nbsp;<a href="#" id="privacy">Privacy Policy.</a></p>
+			</footer>
+		</main>
+		<!-- Javascript for thank you after sending form -->
+			<script>
+			const form = document.getElementById('contact')
+			const thankYou = document.getElementById('thankyou')
+			const submit = document.getElementById('button')
+			const text = document.getElementById('hideheader')
+			
+			submit.addEventListener('click', handleMyForm)
+			
+			async function handleMyForm () {
+			const data = new FormData(form)
+			const response = await fetch("https://formspree.io/f/xbdwyody", {
+			method: "POST",
+			body: data,
+			headers: {
+				'Accept': 'application/json'
+				}
+			});
+			
+			if (response.ok) {//replaces form with thank you message
+				form.style.display= 'none';
+				text.style.display= 'none';
+				thankYou.style.display = 'block';
+			}
+			else {
+				alert("Oops! Something went wrong!");
+			}
+			}
+			</script>
+	</body>
+</html>
+	
